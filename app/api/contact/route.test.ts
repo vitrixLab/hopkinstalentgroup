@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { site } from '@/data/site';
 import { MAX_BODY_BYTES } from '@/lib/contact/bodyLimit';
-import { MailConfigError, sendInquiryMail } from '@/lib/contact/mail';
+import { getMailConfig, MailConfigError, sendInquiryMail } from '@/lib/contact/mail';
 import { resetRateLimits } from '@/lib/contact/rateLimit';
 import { POST } from '@/app/api/contact/route';
 
@@ -292,6 +292,77 @@ describe('POST /api/contact — failure handling', () => {
         'Inquiry mail not configured:',
         'MailConfigError: SMTP configuration is incomplete',
       );
+    } finally {
+      spy.mockRestore();
+    }
+  });
+
+  it('never logs sentinel values injected through error name, code, message, or response', async () => {
+    const spy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    try {
+      const failure = Object.assign(
+        new Error(
+          'connect FAKE_HOST_SENTINEL failed for FAKE_PASS_SENTINEL at smtp://FAKE_PASS_SENTINEL',
+        ),
+        {
+          name: 'SentinelErr9f3a8b',
+          code: 'CodeSentinel9f3a',
+          response: '535 FAKE_SMTP_RESPONSE_SENTINEL',
+          responseCode: 535,
+        },
+      );
+      sendInquiryMailMock.mockRejectedValueOnce(failure);
+      const response = await POST(makeRequest(validBody));
+      expect(response.status).toBe(502);
+      const logged = spy.mock.calls.flat().map(String).join(' ');
+      expect(logged).toContain('Inquiry mail send failed:');
+      expect(logged).toContain('Error');
+      expect(logged).toContain('responseCode=535');
+      for (const sentinel of [
+        'FAKE_HOST_SENTINEL',
+        'FAKE_PASS_SENTINEL',
+        'SentinelErr9f3a8b',
+        'CodeSentinel9f3a',
+        'FAKE_SMTP_RESPONSE_SENTINEL',
+      ]) {
+        expect(logged).not.toContain(sentinel);
+      }
+    } finally {
+      spy.mockRestore();
+    }
+  });
+
+  it('never logs env-injected secrets from a real configuration error', async () => {
+    const spy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    try {
+      let configFailure: unknown;
+      try {
+        getMailConfig({
+          SMTP_HOST: 'FAKE_HOST_ROUTE_DO_NOT_LOG example',
+          SMTP_PORT: '587',
+          SMTP_USER: 'FAKE_USER_ROUTE_DO_NOT_LOG',
+          SMTP_PASS: 'FAKE_PASS_ROUTE_DO_NOT_LOG_123',
+          CONTACT_FROM_EMAIL: 'FAKE_FROM_ROUTE_DO_NOT_LOG@invalid.example',
+          CONTACT_TO_EMAIL: 'FAKE_TO_ROUTE_DO_NOT_LOG@invalid.example',
+        });
+      } catch (error) {
+        configFailure = error;
+      }
+      expect(configFailure).toBeInstanceOf(MailConfigError);
+      sendInquiryMailMock.mockRejectedValueOnce(configFailure);
+      const response = await POST(makeRequest(validBody));
+      expect(response.status).toBe(503);
+      const logged = spy.mock.calls.flat().map(String).join(' ');
+      expect(logged).toContain('Inquiry mail not configured:');
+      for (const sentinel of [
+        'FAKE_HOST_ROUTE_DO_NOT_LOG',
+        'FAKE_USER_ROUTE_DO_NOT_LOG',
+        'FAKE_PASS_ROUTE_DO_NOT_LOG_123',
+        'FAKE_FROM_ROUTE_DO_NOT_LOG',
+        'FAKE_TO_ROUTE_DO_NOT_LOG',
+      ]) {
+        expect(logged).not.toContain(sentinel);
+      }
     } finally {
       spy.mockRestore();
     }
