@@ -2,7 +2,7 @@
 
 **Document ID:** BPSR-001  
 **Project context:** HTG Brand Identity & Website Design Handoff — Strategy Iteration 01  
-**Revision:** 1  
+**Revision:** 2  
 **Status:** Research framework — proposed; not an approved operating or measurement model  
 **Governance:** [GitHub Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10)  
 **Companion research:** [HTG Brand Research & Strategy](../branding/README.md)  
@@ -228,6 +228,7 @@ Use the following hierarchy when describing evidence. A citation in this bibliog
 | Revision | Status | Description |
 |---|---|---|
 | 1 | Proposed framework | Synthesized portfolio-level strategy, co-branding/resource allocation, eWOM comment classification, statistical-method boundaries, and grayscale/color governance. Added source references and explicit evidence limitations. |
+| 2 | Proposed framework | Made notebook/data dependencies conditional rather than assumed; removed explicit studio palette values while preserving the prohibition; added source-tier and NotebookLM inventory caveats; corrected Godin terminology and reconciled bibliographic metadata against publisher/proceedings records. |
 
 ---
 
