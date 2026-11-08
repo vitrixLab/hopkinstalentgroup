@@ -8,7 +8,7 @@
 **Companion research:** [HTG Brand Research & Strategy](../branding/README.md)  
 **Visual standard:** [Visual Engineering Design Standard](../visual-engineering/VISUAL_DESIGN_STANDARD.md)
 
-> This document translates the portfolio, co-branding, social communication, and research-method ideas supplied for synthesis into a cautious framework for future HTG decisions. It does not assert that the referenced analyses have been run on HTG data. No notebook datasets, outputs, or analysis scripts were present in the repository review used for this revision.
+> This document translates the portfolio, co-branding, social communication, and research-method ideas supplied for synthesis into a cautious framework for future HTG decisions. It does not assert that the referenced analyses have been run on HTG data. No original HTG notebook datasets, outputs, or analysis scripts were supplied in the repository review used for this revision. This is an evidence limitation, not an assumption that those materials will later arrive.
 
 ---
 
@@ -183,7 +183,7 @@ Grayscale inspection is a structural diagnostic, not a substitute for color-cont
 
 ## 6. Evidence required before claiming project findings
 
-No HTG-specific empirical conclusion should be published until the following are available and reviewed:
+No HTG-specific empirical conclusion is supportable from the materials currently supplied. If the following evidence is later provided, it must be reviewed before any empirical conclusion is considered:
 - original notebook(s), dataset provenance, and data dictionary;
 - lawful collection basis and privacy/permission review;
 - reproducible cleaning and preprocessing steps;
@@ -194,7 +194,7 @@ No HTG-specific empirical conclusion should be published until the following are
 - interpretation linked to the actual output rather than a summary paraphrase;
 - named reviewer/approver and decision record.
 
-**Current evidence status:** the Gemini synthesis is a secondary summary supplied for discussion. The referenced notebook sources were not attached or independently inspected for this revision. Therefore, all HTG empirical findings, coefficients, reliability values, audience proportions, and optimization results remain **unverified / not asserted**.
+**Current evidence status:** the Gemini synthesis is a secondary summary supplied for discussion. Original HTG notebooks, datasets, and analysis outputs were not supplied to this repository review. Their future delivery is not assumed. Therefore, all HTG empirical findings, coefficients, reliability values, audience proportions, and optimization results remain **unverified / not asserted**.
 
 ## 7. References
 
