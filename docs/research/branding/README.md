@@ -3,7 +3,7 @@
 > **Project:** Hopkins Talent Group (HTG)  
 > **Research record:** HTG-STR-001  
 > **Iteration:** Strategy Iteration 01  
-> **Revision:** 6  
+> **Revision:** 7  
 > **Status:** Proposed strategic baseline — pending business verification and stakeholder approval  
 > **Governance:** [GitHub Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10)  
 > **Companion standard:** [Visual Engineering Design Standard](../visual-engineering/VISUAL_DESIGN_STANDARD.md)
@@ -399,3 +399,14 @@ The MMF Revision 2.1 handoff is cited solely as a reference for visual handoff d
 ---
 
 **Working rule:** If a fact, relationship, claim, visual value, permission, or behavior is not supported by an approved source, mark it **TBD — do not invent**.
+
+
+## 14. RAG continuity companion
+
+The [HTG Website Revamp RAG Context](../HTG_WEBSITE_REVAMP_RAG_CONTEXT.md) is a derived retrieval aid that summarizes project continuity, source precedence, design constraints, website dependencies, evidence boundaries, and unresolved blockers for AI/human retrieval.
+
+It is not an alternate strategy source, approval record, or evidence source. For any strategic question, this document remains canonical. For decisions and approvals, use [Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10). If the RAG summary conflicts with this file or a later authorized decision, this file / authorized decision takes precedence.
+
+### Revision 7 note
+
+Added a retrieval companion reference without changing the strategic position, capability taxonomy, audience hypotheses, relationship classes, approval status, or unresolved decisions. No new business facts or approvals are inferred.
