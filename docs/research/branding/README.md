@@ -3,7 +3,7 @@
 > **Project:** Hopkins Talent Group (HTG)  
 > **Research record:** HTG-STR-001  
 > **Iteration:** Strategy Iteration 01  
-> **Revision:** 4  
+> **Revision:** 5  
 > **Status:** Proposed strategic baseline — pending business verification and stakeholder approval  
 > **Governance:** [GitHub Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10)  
 > **Companion standard:** [Visual Engineering Design Standard](../visual-engineering/VISUAL_DESIGN_STANDARD.md)
@@ -392,6 +392,7 @@ The MMF Revision 2.1 handoff is cited solely as a reference for visual handoff d
 | 2 | Proposed | Incorporated Issue #10 review remediation: approval blocker, delivery classification, relationship visual grammar, proposed messaging, provisional audience mapping, legal/disclosure slots, measurable quality/accessibility gates, source/token/vector handoff, clearance screening, references/testing, fixed A3 exports, and explicit unresolved ownership/date fields. |
 | 3 | Proposed | Added explicit audit provenance linking F01–F12 and the Issue #10 remediation record; reaffirmed Issue #10 as the live authority for scope, sequencing, unresolved decisions, and acceptance. No business facts or approvals were inferred. |
 | 4 | Proposed | Added portfolio-level governance and social communication research boundaries; linked the new research framework; added unresolved evidence requirements for notebooks, comment methodology, and resource-allocation inputs. No empirical HTG findings or external palette were adopted. |
+| 5 | Proposed | Clarified that original notebook/data delivery is not assumed; separated plain-text messaging validation from rendered first-screen validation; retained positioning and voice as canonical in §5; corrected the studio-separation reference to §2.2. |
 
 ---
 
