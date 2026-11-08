@@ -2,13 +2,13 @@
 
 **Document ID:** BPSR-001  
 **Project context:** HTG Brand Identity & Website Design Handoff — Strategy Iteration 01  
-**Revision:** 2  
+**Revision:** 3  
 **Status:** Research framework — proposed; not an approved operating or measurement model  
 **Governance:** [GitHub Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10)  
 **Companion research:** [HTG Brand Research & Strategy](../branding/README.md)  
 **Visual standard:** [Visual Engineering Design Standard](../visual-engineering/VISUAL_DESIGN_STANDARD.md)
 
-> This document translates the portfolio, co-branding, social communication, and research-method ideas supplied for synthesis into a cautious framework for future HTG decisions. It does not assert that the referenced analyses have been run on HTG data. No original HTG notebook datasets, outputs, or analysis scripts were supplied in the repository review used for this revision. This is an evidence limitation, not an assumption that those materials will later arrive.
+> This document translates the portfolio, co-branding, social communication, and research-method ideas supplied for synthesis into a cautious framework for future HTG decisions. It does not assert that the referenced analyses have been run on HTG data. The notebook sources are literature; no HTG datasets exist.
 
 ---
 
@@ -169,7 +169,7 @@ The design response is to:
 
 The 70% neutral / 20% supporting / 10% accent distribution may be used as a starting hypothesis for a particular composition. It is not a universal law, an accessibility criterion, or an approved HTG token specification. Adjust the proportions according to information density, audience, medium, contrast, and semantic role. Record the rationale and test the actual rendered result.
 
-The VitrixLab studio colors are a separate identity and must not be copied into HTG identity tokens. No studio palette values are approved HTG colors; HTG identity values remain subject to HTG's own approval process.
+The colors supplied in the synthesis are not approved HTG colors, belong to a separate identity, and must not be copied into HTG identity tokens; they are intentionally not reproduced here.
 
 ### 5.3 Grayscale and accessibility gates
 
@@ -184,7 +184,7 @@ Grayscale inspection is a structural diagnostic, not a substitute for color-cont
 ## 6. Evidence required before claiming project findings
 
 No HTG-specific empirical conclusion is supportable from the materials currently supplied. If the following evidence is later provided, it must be reviewed before any empirical conclusion is considered:
-- original notebook(s), dataset provenance, and data dictionary;
+- HTG-specific dataset(s), provenance, and data dictionary (none exist today);
 - lawful collection basis and privacy/permission review;
 - reproducible cleaning and preprocessing steps;
 - codebook and coding instructions;
@@ -194,7 +194,7 @@ No HTG-specific empirical conclusion is supportable from the materials currently
 - interpretation linked to the actual output rather than a summary paraphrase;
 - named reviewer/approver and decision record.
 
-**Current evidence status:** the Gemini synthesis is a secondary summary supplied for discussion. Original HTG notebooks, datasets, and analysis outputs were not supplied to this repository review. Their future delivery is not assumed. Therefore, all HTG empirical findings, coefficients, reliability values, audience proportions, and optimization results remain **unverified / not asserted**.
+**Current evidence status:** the notebook sources behind this framework are published literature (research papers and a practitioner book), not HTG datasets. No HTG-specific empirical result exists. Findings in those sources describe their own samples and markets and are not evidence about HTG audiences. All HTG empirical findings, coefficients, reliability values, audience proportions, and optimization results remain not asserted. AI-generated syntheses (including NotebookLM and other assistant summaries) are secondary and must not be cited as evidence; trace each claim to its primary source.
 
 ## 7. Source hierarchy and references
 
@@ -202,26 +202,32 @@ No HTG-specific empirical conclusion is supportable from the materials currently
 
 Use the following hierarchy when describing evidence. A citation in this bibliography does not prove that the full publication is loaded into NotebookLM or that a notebook-derived analysis has been reproduced.
 
-| Tier | Source class | Current inventory status / permitted use |
+| Tier | Source type | What it can support |
 |---|---|---|
-| A | Primary peer-reviewed journal research | Godey et al. (2016) and Chu & Kim (2011) are bibliographically identified and their DOI records were checked. The full PDFs/text are **not reported as present** in the NotebookLM source panel; cite them as external literature, not as notebook-ingested full text. |
-| B | Primary conference research / proceedings | Dai et al. (2025) is a published KDD proceedings paper with an independently accessible proceedings record and paper. Gemini's panel review reports Dai-related material in the notebook; exact attachment type and completeness have not been independently verified in this repository pass. |
-| C | Published practitioner book / authored excerpt | Seth Godin's *This Is Marketing* (2018) excerpt is reported in the notebook source panel. Treat it as practitioner literature, not peer-reviewed empirical evidence. |
-| D | Academic theses and dissertations | Gemini's review reports **no thesis source currently present** in the NotebookLM panel at the time of that review. Retain this tier as a future-source placeholder only; do not imply theses are currently available. |
-| E | AI-generated summaries and secondary syntheses | May assist discovery or synthesis, but are **not primary evidence** and must never be cited as a substitute for the underlying source, dataset, or analysis. |
+| A | Peer-reviewed empirical study | Findings about its own sample, period, and market; not HTG audiences by default |
+| B | Methods or model paper | The method's behavior on its own data or assumptions; not evidence about HTG |
+| C | Practitioner book | Frameworks and heuristics; not empirical evidence |
+| E | AI output (any assistant, including Claude, Gemini, ChatGPT, DeepSeek, NotebookLM) | Nothing as evidence. May be cited as process provenance (for example, which review produced a revision), never as evidence for a claim; trace claims to the primary source |
 
-**Inventory reconciliation note:** this tier table records the source-panel status as reported in the supplied Gemini peer review, not a direct export or independent inspection of the live NotebookLM panel in this repository session. Earlier descriptions of the notebook contents differ. Before claiming the notebook is “literature only,” or asserting that a specific full text/excerpt is loaded, export or inspect the current source panel and record the source title, author, type, and attachment form. Do not infer a source from an AI-generated notebook answer.
+**Inventory reconciliation note:** the supplied review describes the notebook sources as published literature, but the live NotebookLM Sources panel has not been directly exported or independently inspected in this revision. Reconcile the current panel before claiming a complete source inventory or specifying which full texts, excerpts, or attachment forms are loaded. Record each source's title, author, type, and attachment form. Do not infer a source from an AI-generated notebook answer.
 
-**Scope note:** Godey et al. studied luxury-brand audiences and Chu & Kim studied eWOM engagement in social networking sites. Their findings and constructs must be interpreted within their original research designs and populations; they do not establish HTG-specific audience behavior.
+**Scope notes**
+- **Dai et al. (2025):** models a parent brand allocating a budget across sub-brands it controls; tested on synthetic data and crawled co-branding cases grouped into general categories. Not evidence about HTG, whose ecosystem participants are not assumed to be sub-brands (Brand Research §2.3).
+- **Kral et al. (2019):** a mathematical model of an optimal brand portfolio under risk and budget limits; the authors state that qualitative brand characteristics were not covered. Not evidence about HTG.
+- **Morgan & Rego (2009):** firm-level associations between brand portfolio characteristics and performance across 72 large consumer-market firms, using American Customer Satisfaction Index and other secondary data. Not evidence about a service ecosystem such as HTG.
+- **Godin (2018):** positioning and market-selection heuristics, such as the smallest viable market. No empirical validation for HTG. Paraphrase concepts only; do not store book passages or paper PDFs in this public repository.
+- **Godey et al. (2016) and Chu & Kim (2011):** scope is described above; their findings are limited to their original study populations, periods, and research designs.
 
+## 7. References
 
-1. Godey, B., Manthiou, A., Pederzoli, D., Rokka, J., Aiello, G., Donvito, R., & Singh, R. (2016). *Social media marketing efforts of luxury brands: Influence on brand equity and consumer behavior.* Journal of Business Research, 69(12), 5833–5841. [https://doi.org/10.1016/j.jbusres.2016.04.181](https://doi.org/10.1016/j.jbusres.2016.04.181)
-2. Chu, S.-C., & Kim, Y. (2011). *Determinants of consumer engagement in electronic word-of-mouth (eWOM) in social networking sites.* International Journal of Advertising, 30(1), 47–75. [https://doi.org/10.2501/IJA-30-1-047-075](https://doi.org/10.2501/IJA-30-1-047-075)
-3. Dai, X., Sun, X., Zuo, J., Liu, X., & Lui, J. C. S. (2025). *A Unified Online-Offline Framework for Co-Branding Campaign Recommendations.* In *Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining*, Vol. 2, KDD ’25, 427–438. ACM. [https://doi.org/10.1145/3711896.3736824](https://doi.org/10.1145/3711896.3736824). **Metadata note:** the author manuscript's ACM reference-format block reports 12 pages; the proceedings/institutional record gives pages 427–438 (12 pages). Use the proceedings page range rather than the inconsistent 13-page secondary count.
-4. Kral, P., Janoskova, K., & Durana, P. (2019). *Linear Model for Brand Portfolio Optimization.* Economics and Culture, 16(1), 32–39. [https://doi.org/10.2478/jec-2019-0004](https://doi.org/10.2478/jec-2019-0004)
-5. Morgan, N. A., & Rego, L. L. (2009). *Brand Portfolio Strategy and Firm Performance.* Journal of Marketing, 73(1), 59–74. [https://doi.org/10.1509/jmkg.73.1.059](https://doi.org/10.1509/jmkg.73.1.059). DOI verified against the journal publisher record.
+Tiers are defined above. A tier describes what a source can support, not how good it is.
 
-6. Godin, S. (2018). *This Is Marketing: You Can't Be Seen Until You Learn to See.* Portfolio. ISBN 978-0-525-54083-0. The publisher's table of contents uses the term **“smallest viable market”**; do not substitute “minimum viable market.”
+1. Godey, B., Manthiou, A., Pederzoli, D., Rokka, J., Aiello, G., Donvito, R., & Singh, R. (2016). Social media marketing efforts of luxury brands: Influence on brand equity and consumer behavior. *Journal of Business Research, 69*(12), 5833–5841. https://doi.org/10.1016/j.jbusres.2016.04.181 [Tier A]
+2. Chu, S.-C., & Kim, Y. (2011). Determinants of consumer engagement in electronic word-of-mouth (eWOM) in social networking sites. *International Journal of Advertising, 30*(1), 47–75. https://doi.org/10.2501/IJA-30-1-047-075 [Tier A]
+3. Dai, X., Sun, X., Zuo, J., Liu, X., & Lui, J. C. S. (2025). A Unified Online-Offline Framework for Co-Branding Campaign Recommendations. In *Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2* (KDD '25), August 3–7, 2025, Toronto, ON, Canada. ACM. https://doi.org/10.1145/3711896.3736824 [Tier B]
+4. Kral, P., Janoskova, K., & Durana, P. (2019). Linear Model for Brand Portfolio Optimization. *Economics and Culture, 16*(1), 32–39. https://doi.org/10.2478/jec-2019-0004 [Tier B]
+5. Morgan, N. A., & Rego, L. L. (2009). Brand Portfolio Strategy and Firm Performance. *Journal of Marketing, 73*(1), 59–74. https://doi.org/10.1509/jmkg.73.1.059 [Tier A]
+6. Godin, S. (2018). *This Is Marketing: You Can't Be Seen Until You Learn to See.* Portfolio/Penguin. ISBN 978-0-525-54083-0. [Tier C]
 
 ## 8. Revision history
 
@@ -229,6 +235,7 @@ Use the following hierarchy when describing evidence. A citation in this bibliog
 |---|---|---|
 | 1 | Proposed framework | Synthesized portfolio-level strategy, co-branding/resource allocation, eWOM comment classification, statistical-method boundaries, and grayscale/color governance. Added source references and explicit evidence limitations. |
 | 2 | Proposed framework | Made notebook/data dependencies conditional rather than assumed; removed explicit studio palette values while preserving the prohibition; added source-tier and NotebookLM inventory caveats; corrected Godin terminology and reconciled bibliographic metadata against publisher/proceedings records. |
+| 3 | Proposed framework | Clarified that notebook sources are literature and no HTG dataset or empirical result exists; retained a direct NotebookLM inventory-reconciliation caveat; removed the thesis placeholder; added source tiers and study-scope notes; preserved verified DOI and proceedings metadata. |
 
 ---
 
