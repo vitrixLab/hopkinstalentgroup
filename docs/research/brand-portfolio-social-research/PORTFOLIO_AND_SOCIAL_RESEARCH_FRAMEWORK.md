@@ -77,7 +77,7 @@ For the current HTG plan, use portfolio thinking to:
 - prioritize content and design work based on approved audience needs, readiness, and evidence;
 - keep each entity's identity and relationship status accurate.
 
-No budget allocation, partner priority, ownership structure, or sub-brand endorsement is decided by this document.
+No budget allocation, partner priority, ownership structure, or sub-brand endorsement is decided by this document. The Dai et al. framework models co-branding among brands, including multiple sub-brands under a parent brand. It is not directly transferable to HTG's network by default: independent partners, clients, and referral entities must not be modeled as HTG sub-brands unless a parent/sub-brand relationship is independently verified.
 
 ## 3. Social communication and comment research
 
@@ -196,13 +196,32 @@ No HTG-specific empirical conclusion is supportable from the materials currently
 
 **Current evidence status:** the Gemini synthesis is a secondary summary supplied for discussion. Original HTG notebooks, datasets, and analysis outputs were not supplied to this repository review. Their future delivery is not assumed. Therefore, all HTG empirical findings, coefficients, reliability values, audience proportions, and optimization results remain **unverified / not asserted**.
 
-## 7. References
+## 7. Source hierarchy and references
+
+### 7.1 Source tiers and NotebookLM inventory boundary
+
+Use the following hierarchy when describing evidence. A citation in this bibliography does not prove that the full publication is loaded into NotebookLM or that a notebook-derived analysis has been reproduced.
+
+| Tier | Source class | Current inventory status / permitted use |
+|---|---|---|
+| A | Primary peer-reviewed journal research | Godey et al. (2016) and Chu & Kim (2011) are bibliographically identified and their DOI records were checked. The full PDFs/text are **not reported as present** in the NotebookLM source panel; cite them as external literature, not as notebook-ingested full text. |
+| B | Primary conference research / proceedings | Dai et al. (2025) is a published KDD proceedings paper with an independently accessible proceedings record and paper. Gemini's panel review reports Dai-related material in the notebook; exact attachment type and completeness have not been independently verified in this repository pass. |
+| C | Published practitioner book / authored excerpt | Seth Godin's *This Is Marketing* (2018) excerpt is reported in the notebook source panel. Treat it as practitioner literature, not peer-reviewed empirical evidence. |
+| D | Academic theses and dissertations | Gemini's review reports **no thesis source currently present** in the NotebookLM panel at the time of that review. Retain this tier as a future-source placeholder only; do not imply theses are currently available. |
+| E | AI-generated summaries and secondary syntheses | May assist discovery or synthesis, but are **not primary evidence** and must never be cited as a substitute for the underlying source, dataset, or analysis. |
+
+**Inventory reconciliation note:** this tier table records the source-panel status as reported in the supplied Gemini peer review, not a direct export or independent inspection of the live NotebookLM panel in this repository session. Earlier descriptions of the notebook contents differ. Before claiming the notebook is “literature only,” or asserting that a specific full text/excerpt is loaded, export or inspect the current source panel and record the source title, author, type, and attachment form. Do not infer a source from an AI-generated notebook answer.
+
+**Scope note:** Godey et al. studied luxury-brand audiences and Chu & Kim studied eWOM engagement in social networking sites. Their findings and constructs must be interpreted within their original research designs and populations; they do not establish HTG-specific audience behavior.
+
 
 1. Godey, B., Manthiou, A., Pederzoli, D., Rokka, J., Aiello, G., Donvito, R., & Singh, R. (2016). *Social media marketing efforts of luxury brands: Influence on brand equity and consumer behavior.* Journal of Business Research, 69(12), 5833–5841. [https://doi.org/10.1016/j.jbusres.2016.04.181](https://doi.org/10.1016/j.jbusres.2016.04.181)
 2. Chu, S.-C., & Kim, Y. (2011). *Determinants of consumer engagement in electronic word-of-mouth (eWOM) in social networking sites.* International Journal of Advertising, 30(1), 47–75. [https://doi.org/10.2501/IJA-30-1-047-075](https://doi.org/10.2501/IJA-30-1-047-075)
-3. Dai, X., Sun, X., Zuo, J., Liu, X., & Lui, J. C. S. (2025). *A Unified Online-Offline Framework for Co-Branding Campaign Recommendations.* Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 427–438. [https://doi.org/10.1145/3711896.3736824](https://doi.org/10.1145/3711896.3736824)
+3. Dai, X., Sun, X., Zuo, J., Liu, X., & Lui, J. C. S. (2025). *A Unified Online-Offline Framework for Co-Branding Campaign Recommendations.* In *Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining*, Vol. 2, KDD ’25, 427–438. ACM. [https://doi.org/10.1145/3711896.3736824](https://doi.org/10.1145/3711896.3736824). **Metadata note:** the author manuscript's ACM reference-format block reports 12 pages; the proceedings/institutional record gives pages 427–438 (12 pages). Use the proceedings page range rather than the inconsistent 13-page secondary count.
 4. Kral, P., Janoskova, K., & Durana, P. (2019). *Linear Model for Brand Portfolio Optimization.* Economics and Culture, 16(1), 32–39. [https://doi.org/10.2478/jec-2019-0004](https://doi.org/10.2478/jec-2019-0004)
-5. Morgan, N. A., & Rego, L. L. (2009). *Brand Portfolio Strategy and Firm Performance.* Journal of Marketing, 73(1), 59–74. [https://doi.org/10.1509/jmkg.73.1.059](https://doi.org/10.1509/jmkg.73.1.059)
+5. Morgan, N. A., & Rego, L. L. (2009). *Brand Portfolio Strategy and Firm Performance.* Journal of Marketing, 73(1), 59–74. [https://doi.org/10.1509/jmkg.73.1.059](https://doi.org/10.1509/jmkg.73.1.059). DOI verified against the journal publisher record.
+
+6. Godin, S. (2018). *This Is Marketing: You Can't Be Seen Until You Learn to See.* Portfolio. ISBN 978-0-525-54083-0. The publisher's table of contents uses the term **“smallest viable market”**; do not substitute “minimum viable market.”
 
 ## 8. Revision history
 
