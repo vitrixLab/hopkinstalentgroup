@@ -2,7 +2,7 @@
 
 **Document ID:** VEDS-001  
 **Project:** Hopkins Talent Group (HTG) — Brand Identity & Website Design Handoff  
-**Revision:** 4  
+**Revision:** 5  
 **Status:** Working standard; quality baseline subject to HTG-specific approval  
 **Governance:** [Issue #10 — HTG Brand Identity & Website Design Handoff](https://github.com/vitrixLab/hopkinstalentgroup/issues/10)  
 **Companion research:** [HTG Brand Research & Strategy](../branding/README.md)
@@ -313,6 +313,7 @@ Rules:
 | 2 | Working standard | Aligned the standard with Issue #10 review remediation: explicit relationship visual grammar, A3/300 dpi export rules, WCAG 2.2 AA evidence gate, references and comprehension testing, evidence-based scoring, clearer rejection criteria, and stronger HTG ownership/approval boundaries. |
 | 3 | Working standard | Added explicit approval-authority/dependency controls and a complete implementation-handoff checklist for editable source, machine-readable tokens, vector logo masters, canonical PDF, A3 exports, and evidence. Linked the governing audit provenance; no approval is inferred. |
 | 4 | Working standard | Added grayscale-first structural validation, color-proportion heuristic boundaries, and an explicit prohibition on importing the designer/studio palette into HTG. Linked the portfolio/social research framework and added grayscale inspection to visual QA. |
+| 5 | Working standard | Removed sample studio hex values, retained the explicit no-transfer rule for VitrixLab studio colors, and corrected the studio-separation cross-reference to HTG Brand Research §2.2. |
 
 ---
 
