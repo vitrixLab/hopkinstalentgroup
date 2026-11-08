@@ -3,7 +3,7 @@
 > **Project:** Hopkins Talent Group (HTG)  
 > **Research record:** HTG-STR-001  
 > **Iteration:** Strategy Iteration 01  
-> **Revision:** 5  
+> **Revision:** 6  
 > **Status:** Proposed strategic baseline — pending business verification and stakeholder approval  
 > **Governance:** [GitHub Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10)  
 > **Companion standard:** [Visual Engineering Design Standard](../visual-engineering/VISUAL_DESIGN_STANDARD.md)
@@ -201,11 +201,12 @@ Before Sheet 01a review, include at least **three relevant visual references** a
 
 References are evidence for analysis, not permission to imitate. The existing HTG logo/brand guide and previously approved specifications must be linked or explicitly recorded as unavailable; do not assume an unseen source exists.
 
-Use a two-stage comprehension sequence; do not collapse the checks into one test.
+Run the comprehension check in two stages.
 
-**Stage 1 — plain-text message test, before Sheet 01b approval:** prepare multiple plain-text positioning alternatives and the four capability labels without logo, color, layout, or other visual cues. Test whether representative reviewers can accurately explain what HTG is, what the four capability areas mean, and what HTG does versus refers. Record the exact prompt/material, reviewer role (not unnecessary personal data), observations, ambiguities, and copy revisions. This is a messaging check, not a visual-design test.
+1. **Before Sheet 01b approval — message test.** Run a five-second message-comprehension test on a plain-text stimulus (the proposed positioning sentence plus the four capability labels) with representative reviewers for each audience. Labeled internal proxies are acceptable where an audience cannot yet be recruited.
+2. **Before Sheet 04 approval — first-screen test.** Repeat the check on the actual first screen, and test whether the dark editorial direction communicates reassurance and clarity as well as authority, particularly for audiences considering financial, insurance, or energy services.
 
-**Stage 2 — first-screen test, before Sheet 04 approval:** test the rendered homepage first screen at the intended desktop and mobile sizes with representative reviewers for each audience. Use a five-second exposure or another documented, consistently applied protocol. Check whether reviewers understand what HTG connects, who the page is for, and what the next step is. Also test whether the visual direction communicates reassurance and clarity as well as authority, particularly for audiences considering financial, insurance, or energy services. Record the prompt, participant roles, method, observations, and resulting revisions. Do not fabricate participants or results.
+Record the prompt, participant role (not unnecessary personal data), observations, and resulting changes for each stage. Do not invent results.
 
 ### 7.4 Avoid
 
@@ -278,7 +279,7 @@ All open items require an **Owner** and **Target date**. Until assigned by the a
 | R-14 | Existing logo/brand guide and previously approved specifications | TBD | TBD — Keith to assign | TBD — Keith to assign |
 | R-15 | Visual references, anti-references, and comprehension-test evidence | Pending | TBD — Keith to assign | TBD — Keith to assign |
 | R-16 | Approved CTA destinations, inquiry handling, form notices, and operational process | TBD | TBD — Keith to assign | TBD — Keith to assign |
-| R-17 | Original notebooks, datasets, data dictionary, provenance, and reproducible outputs, if supplied, for any proposed HTG audience/social research | **NOT PROVIDED — no future delivery assumed** | TBD — Keith to assign | TBD — Keith to assign |
+| R-17 | HTG audience/social research: **no HTG dataset exists.** The NotebookLM sources are published literature (papers, books), not HTG data. Any claim about HTG audiences requires new primary research with a documented method. | **No HTG data — literature only** | TBD — Keith to assign | TBD — Keith to assign |
 | R-18 | Social-comment sampling frame, codebook, coder training, inter-coder reliability, privacy review, and analysis plan | Proposed methodology only | TBD — Keith to assign | TBD — Keith to assign |
 | R-19 | Evidence-backed portfolio/resource-allocation inputs: costs, capacity, constraints, relationship permissions, and outcome measures | Not available | TBD — Keith to assign | TBD — Keith to assign |
 
@@ -303,11 +304,11 @@ Use the companion [Brand Portfolio, Co-Branding & Social Communication Research 
 - Distinguish qualitative interpretation from quantitative summaries. Record sample frame, platform, period, language, denominator, exclusions, and limitations.
 - Use Cronbach's alpha only for appropriate multi-item scale consistency; use an appropriate inter-coder agreement statistic for coder reliability. KMO/Bartlett are factor-analysis diagnostics, not validation of arbitrary comment labels.
 - Regression and structural models require appropriate data and assumptions; observational associations do not establish causation.
-- No HTG audience findings are supportable from the materials currently supplied. If original notebooks, datasets, provenance, analysis outputs, and validation evidence are later provided, review them before making any empirical claim; their future delivery is not assumed.
+- Do not assert HTG audience findings until HTG-specific data, provenance, analysis outputs, and validation evidence exist and have been inspected.
 
 ### Evidence status
 
-The portfolio/social research synthesis supplied for this iteration is a proposed methodology and literature-informed framework, not verified HTG empirical findings. No notebook-derived coefficients, sample statistics, sentiment proportions, reliability values, or allocation outcomes are approved for publication. Original notebooks and datasets have not been supplied in the materials reviewed; no future delivery is assumed.
+The notebook sources described for this iteration are published literature, not HTG data. No HTG-specific empirical result exists. Findings in those sources describe their own samples and markets and are not evidence about HTG audiences. No HTG notebook-derived coefficients, sample statistics, sentiment proportions, reliability values, or allocation outcomes are asserted or approved for publication. The current NotebookLM Sources panel still requires direct inventory reconciliation before the exact source list or attachment forms are represented as independently verified.
 
 ## 11. Six-sheet handoff and production requirements
 
@@ -393,6 +394,7 @@ The MMF Revision 2.1 handoff is cited solely as a reference for visual handoff d
 | 3 | Proposed | Added explicit audit provenance linking F01–F12 and the Issue #10 remediation record; reaffirmed Issue #10 as the live authority for scope, sequencing, unresolved decisions, and acceptance. No business facts or approvals were inferred. |
 | 4 | Proposed | Added portfolio-level governance and social communication research boundaries; linked the new research framework; added unresolved evidence requirements for notebooks, comment methodology, and resource-allocation inputs. No empirical HTG findings or external palette were adopted. |
 | 5 | Proposed | Clarified that original notebook/data delivery is not assumed; separated plain-text messaging validation from rendered first-screen validation; retained positioning and voice as canonical in §5; corrected the studio-separation reference to §2.2. |
+| 6 | Proposed | Clarified that no HTG dataset or HTG audience finding exists; marked the NotebookLM source inventory for direct reconciliation; aligned the two-stage comprehension check with the pre-01b message test and pre-Sheet 04 first-screen test. No business facts, approvals, or empirical findings were added. |
 
 ---
 
