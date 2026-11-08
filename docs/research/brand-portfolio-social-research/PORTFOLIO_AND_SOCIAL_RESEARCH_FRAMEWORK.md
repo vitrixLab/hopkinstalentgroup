@@ -169,7 +169,7 @@ The design response is to:
 
 The 70% neutral / 20% supporting / 10% accent distribution may be used as a starting hypothesis for a particular composition. It is not a universal law, an accessibility criterion, or an approved HTG token specification. Adjust the proportions according to information density, audience, medium, contrast, and semantic role. Record the rationale and test the actual rendered result.
 
-The sample colors supplied in the synthesis (#101722, #F5F5F2, #AEB7C2, #B51F32) are not approved HTG colors. They must not be copied into HTG identity tokens. Any external/studio palette is a separate identity and remains outside HTG brand ownership.
+The VitrixLab studio colors are a separate identity and must not be copied into HTG identity tokens. No studio palette values are approved HTG colors; HTG identity values remain subject to HTG's own approval process.
 
 ### 5.3 Grayscale and accessibility gates
 
