@@ -201,7 +201,11 @@ Before Sheet 01a review, include at least **three relevant visual references** a
 
 References are evidence for analysis, not permission to imitate. The existing HTG logo/brand guide and previously approved specifications must be linked or explicitly recorded as unavailable; do not assume an unseen source exists.
 
-Run five-second homepage-hero comprehension checks with representative reviewers for each audience before Sheet 01b approval. Record the prompt, participant role (not unnecessary personal data), observations, and resulting revisions. Do not fabricate results. Test whether the dark editorial direction communicates reassurance and clarity as well as authority, particularly for audiences considering financial, insurance, or energy services.
+Use a two-stage comprehension sequence; do not collapse the checks into one test.
+
+**Stage 1 — plain-text message test, before Sheet 01b approval:** prepare multiple plain-text positioning alternatives and the four capability labels without logo, color, layout, or other visual cues. Test whether representative reviewers can accurately explain what HTG is, what the four capability areas mean, and what HTG does versus refers. Record the exact prompt/material, reviewer role (not unnecessary personal data), observations, ambiguities, and copy revisions. This is a messaging check, not a visual-design test.
+
+**Stage 2 — first-screen test, before Sheet 04 approval:** test the rendered homepage first screen at the intended desktop and mobile sizes with representative reviewers for each audience. Use a five-second exposure or another documented, consistently applied protocol. Check whether reviewers understand what HTG connects, who the page is for, and what the next step is. Also test whether the visual direction communicates reassurance and clarity as well as authority, particularly for audiences considering financial, insurance, or energy services. Record the prompt, participant roles, method, observations, and resulting revisions. Do not fabricate participants or results.
 
 ### 7.4 Avoid
 
