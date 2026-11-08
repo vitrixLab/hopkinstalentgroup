@@ -125,7 +125,7 @@ Grayscale review is a structural diagnostic. It does not replace measured contra
 
 A 70% neutral / 20% supporting / 10% accent split may be tested as a composition hypothesis, but it is not a universal design law, an accessibility standard, or an approved HTG token rule. Adjust proportions according to content density, audience, medium, semantic roles, and contrast. Record why the distribution improves hierarchy and validate it in the rendered output.
 
-Do not import another studio's palette into HTG. The sample colors #101722, #F5F5F2, #AEB7C2, and #B51F32 supplied in a separate synthesis are not approved HTG identity tokens. HTG color values remain pending its own logo/identity approval sequence. Keep client and designer/studio identities separate.
+VitrixLab studio colors must not be copied into HTG identity tokens. HTG color values remain pending HTG's own logo/identity approval sequence. Keep client and designer/studio identities separate; the studio-separation rule is defined in [HTG Brand Research §2.2](../branding/README.md#22-strategic-hierarchy).
 
 ## 6. Relationship and brand integrity
 
