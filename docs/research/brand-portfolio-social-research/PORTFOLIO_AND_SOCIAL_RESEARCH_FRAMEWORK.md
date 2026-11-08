@@ -196,9 +196,18 @@ No HTG-specific empirical conclusion is supportable from the materials currently
 
 **Current evidence status:** the notebook sources behind this framework are published literature (research papers and a practitioner book), not HTG datasets. No HTG-specific empirical result exists. Findings in those sources describe their own samples and markets and are not evidence about HTG audiences. All HTG empirical findings, coefficients, reliability values, audience proportions, and optimization results remain not asserted. AI-generated syntheses (including NotebookLM and other assistant summaries) are secondary and must not be cited as evidence; trace each claim to its primary source.
 
-## 7. Source hierarchy and references
+## 7. References
 
-### 7.1 Source tiers and NotebookLM inventory boundary
+Tiers are defined above. A tier describes what a source can support, not how good it is.
+
+1. Godey, B., Manthiou, A., Pederzoli, D., Rokka, J., Aiello, G., Donvito, R., & Singh, R. (2016). Social media marketing efforts of luxury brands: Influence on brand equity and consumer behavior. *Journal of Business Research, 69*(12), 5833–5841. https://doi.org/10.1016/j.jbusres.2016.04.181 [Tier A]
+2. Chu, S.-C., & Kim, Y. (2011). Determinants of consumer engagement in electronic word-of-mouth (eWOM) in social networking sites. *International Journal of Advertising, 30*(1), 47–75. https://doi.org/10.2501/IJA-30-1-047-075 [Tier A]
+3. Dai, X., Sun, X., Zuo, J., Liu, X., & Lui, J. C. S. (2025). A Unified Online-Offline Framework for Co-Branding Campaign Recommendations. In *Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2* (KDD '25), August 3–7, 2025, Toronto, ON, Canada. ACM. https://doi.org/10.1145/3711896.3736824 [Tier B]
+4. Kral, P., Janoskova, K., & Durana, P. (2019). Linear Model for Brand Portfolio Optimization. *Economics and Culture, 16*(1), 32–39. https://doi.org/10.2478/jec-2019-0004 [Tier B]
+5. Morgan, N. A., & Rego, L. L. (2009). Brand Portfolio Strategy and Firm Performance. *Journal of Marketing, 73*(1), 59–74. https://doi.org/10.1509/jmkg.73.1.059 [Tier A]
+6. Godin, S. (2018). *This Is Marketing: You Can't Be Seen Until You Learn to See.* Portfolio/Penguin. ISBN 978-0-525-54083-0. [Tier C]
+
+### 7.1 Source tiers and scope notes
 
 Use the following hierarchy when describing evidence. A citation in this bibliography does not prove that the full publication is loaded into NotebookLM or that a notebook-derived analysis has been reproduced.
 
@@ -217,17 +226,6 @@ Use the following hierarchy when describing evidence. A citation in this bibliog
 - **Morgan & Rego (2009):** firm-level associations between brand portfolio characteristics and performance across 72 large consumer-market firms, using American Customer Satisfaction Index and other secondary data. Not evidence about a service ecosystem such as HTG.
 - **Godin (2018):** positioning and market-selection heuristics, such as the smallest viable market. No empirical validation for HTG. Paraphrase concepts only; do not store book passages or paper PDFs in this public repository.
 - **Godey et al. (2016) and Chu & Kim (2011):** scope is described above; their findings are limited to their original study populations, periods, and research designs.
-
-## 7. References
-
-Tiers are defined above. A tier describes what a source can support, not how good it is.
-
-1. Godey, B., Manthiou, A., Pederzoli, D., Rokka, J., Aiello, G., Donvito, R., & Singh, R. (2016). Social media marketing efforts of luxury brands: Influence on brand equity and consumer behavior. *Journal of Business Research, 69*(12), 5833–5841. https://doi.org/10.1016/j.jbusres.2016.04.181 [Tier A]
-2. Chu, S.-C., & Kim, Y. (2011). Determinants of consumer engagement in electronic word-of-mouth (eWOM) in social networking sites. *International Journal of Advertising, 30*(1), 47–75. https://doi.org/10.2501/IJA-30-1-047-075 [Tier A]
-3. Dai, X., Sun, X., Zuo, J., Liu, X., & Lui, J. C. S. (2025). A Unified Online-Offline Framework for Co-Branding Campaign Recommendations. In *Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2* (KDD '25), August 3–7, 2025, Toronto, ON, Canada. ACM. https://doi.org/10.1145/3711896.3736824 [Tier B]
-4. Kral, P., Janoskova, K., & Durana, P. (2019). Linear Model for Brand Portfolio Optimization. *Economics and Culture, 16*(1), 32–39. https://doi.org/10.2478/jec-2019-0004 [Tier B]
-5. Morgan, N. A., & Rego, L. L. (2009). Brand Portfolio Strategy and Firm Performance. *Journal of Marketing, 73*(1), 59–74. https://doi.org/10.1509/jmkg.73.1.059 [Tier A]
-6. Godin, S. (2018). *This Is Marketing: You Can't Be Seen Until You Learn to See.* Portfolio/Penguin. ISBN 978-0-525-54083-0. [Tier C]
 
 ## 8. Revision history
 
