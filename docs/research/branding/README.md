@@ -274,7 +274,7 @@ All open items require an **Owner** and **Target date**. Until assigned by the a
 | R-14 | Existing logo/brand guide and previously approved specifications | TBD | TBD — Keith to assign | TBD — Keith to assign |
 | R-15 | Visual references, anti-references, and comprehension-test evidence | Pending | TBD — Keith to assign | TBD — Keith to assign |
 | R-16 | Approved CTA destinations, inquiry handling, form notices, and operational process | TBD | TBD — Keith to assign | TBD — Keith to assign |
-| R-17 | Original notebooks, datasets, data dictionary, provenance, and reproducible outputs for any claimed HTG audience/social research | **NOT PROVIDED / UNVERIFIED** | TBD — Keith to assign | TBD — Keith to assign |
+| R-17 | Original notebooks, datasets, data dictionary, provenance, and reproducible outputs, if supplied, for any proposed HTG audience/social research | **NOT PROVIDED — no future delivery assumed** | TBD — Keith to assign | TBD — Keith to assign |
 | R-18 | Social-comment sampling frame, codebook, coder training, inter-coder reliability, privacy review, and analysis plan | Proposed methodology only | TBD — Keith to assign | TBD — Keith to assign |
 | R-19 | Evidence-backed portfolio/resource-allocation inputs: costs, capacity, constraints, relationship permissions, and outcome measures | Not available | TBD — Keith to assign | TBD — Keith to assign |
 
@@ -299,11 +299,11 @@ Use the companion [Brand Portfolio, Co-Branding & Social Communication Research 
 - Distinguish qualitative interpretation from quantitative summaries. Record sample frame, platform, period, language, denominator, exclusions, and limitations.
 - Use Cronbach's alpha only for appropriate multi-item scale consistency; use an appropriate inter-coder agreement statistic for coder reliability. KMO/Bartlett are factor-analysis diagnostics, not validation of arbitrary comment labels.
 - Regression and structural models require appropriate data and assumptions; observational associations do not establish causation.
-- Do not assert HTG audience findings until original notebooks, datasets, data provenance, analysis outputs, and validation evidence have been inspected.
+- No HTG audience findings are supportable from the materials currently supplied. If original notebooks, datasets, provenance, analysis outputs, and validation evidence are later provided, review them before making any empirical claim; their future delivery is not assumed.
 
 ### Evidence status
 
-The portfolio/social research synthesis supplied for this iteration is a proposed methodology and literature-informed framework, not verified HTG empirical findings. No notebook-derived coefficients, sample statistics, sentiment proportions, reliability values, or allocation outcomes are approved for publication.
+The portfolio/social research synthesis supplied for this iteration is a proposed methodology and literature-informed framework, not verified HTG empirical findings. No notebook-derived coefficients, sample statistics, sentiment proportions, reliability values, or allocation outcomes are approved for publication. Original notebooks and datasets have not been supplied in the materials reviewed; no future delivery is assumed.
 
 ## 11. Six-sheet handoff and production requirements
 
