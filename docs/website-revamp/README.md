@@ -8,7 +8,7 @@
 
 ## 1. Purpose and authority
 
-This document owns the website-specific execution plan: information architecture, page responsibilities, visitor journeys, content requirements, implementation workstreams, and website acceptance.
+This document owns the website-specific execution plan: information architecture, page responsibilities, visitor journeys, content requirements, implementation workstreams, and website acceptance. The [HTG Website Revamp RAG Context](../research/HTG_WEBSITE_REVAMP_RAG_CONTEXT.md) is a derived retrieval aid only; it does not replace this plan or Issue #10.
 
 It does not redefine HTG's business strategy, positioning, capability taxonomy, audience hierarchy, or relationship classifications. Those are maintained in [HTG Brand Research](../research/branding/README.md). If a conflict appears, pause affected work and record the decision in Issue #10; do not silently create a second definition.
 
@@ -234,7 +234,7 @@ Owners and dates remain TBD until assigned by the authorized project decision-ma
 - [HTG Brand Research](../research/branding/README.md)
 - [Visual Engineering Design Standard](../research/visual-engineering/VISUAL_DESIGN_STANDARD.md)
 - [Brand Portfolio & Social Research Framework](../research/brand-portfolio-social-research/PORTFOLIO_AND_SOCIAL_RESEARCH_FRAMEWORK.md)
-- [Inquiry Email — Website to VPS](../inquiry-email.md)
+- [Inquiry Email — Website to VPS](../inquiry-email.md)\n- [HTG Website Revamp RAG Context](../research/HTG_WEBSITE_REVAMP_RAG_CONTEXT.md)
 
 ## 14. Status
 
