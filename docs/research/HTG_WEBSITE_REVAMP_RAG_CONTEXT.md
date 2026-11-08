@@ -39,7 +39,7 @@ If evidence cannot resolve a conflict, preserve it as **UNRESOLVED — DO NOT IN
 | HTG strategy, positioning, voice, capability areas, audiences, relationship taxonomy | [Brand Research](branding/README.md) | Summarize and route; do not redefine |
 | Sitemap, journeys, content model, implementation and website acceptance | [Website Revamp Plan](../../website-revamp/README.md) | Summarize and route; do not redefine |
 | Geometry, grids, typography, composition, color and visual QA | [Visual Engineering Design Standard](visual-engineering/VISUAL_DESIGN_STANDARD.md) | Summarize and route; do not redefine |
-| Portfolio/co-branding research, social methods, statistics, evidence tiers | [Portfolio & Social Research Framework](../brand-portfolio-social-research/PORTFOLIO_AND_SOCIAL_RESEARCH_FRAMEWORK.md) | Summarize and route; do not redefine |
+| Portfolio/co-branding research, social methods, statistics, evidence tiers | [Portfolio & Social Research Framework](brand-portfolio-social-research/PORTFOLIO_AND_SOCIAL_RESEARCH_FRAMEWORK.md) | Summarize and route; do not redefine |
 | Inquiry endpoint, SMTP, security, deployment assumptions, VPS operations | [Inquiry Email](../../inquiry-email.md) | Summarize and route; do not redefine |
 | Decisions, approval, unresolved register, change tracking | [Issue #10](https://github.com/vitrixLab/hopkinstalentgroup/issues/10) | Live decision record |
 
@@ -183,7 +183,7 @@ The Portfolio & Social Research Framework is methodology, not evidence that HTG-
 - Social research requires a defined population, platform, time window, sampling, codebook, coder agreement, missing data, and limitations.
 - Keep correlation separate from causation and internal consistency separate from inter-coder agreement.
 
-See [Portfolio & Social Research Framework](../brand-portfolio-social-research/PORTFOLIO_AND_SOCIAL_RESEARCH_FRAMEWORK.md) for canonical methods and references.
+See [Portfolio & Social Research Framework](brand-portfolio-social-research/PORTFOLIO_AND_SOCIAL_RESEARCH_FRAMEWORK.md) for canonical methods and references.
 
 ## 11. Technical and operational boundary
 
