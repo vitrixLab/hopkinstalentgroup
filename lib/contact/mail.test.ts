@@ -282,6 +282,65 @@ describe('describeMailError — log sanitization', () => {
     expect(describeMailError(dotted)).toBe('Error');
   });
 
+  it('never emits a unique sentinel injected as the error name', () => {
+    const error = Object.assign(new Error('msg'), {
+      name: 'SentinelErr9f3a8b',
+    });
+    const described = describeMailError(error);
+    expect(described).toBe('Error');
+    expect(described).not.toContain('SentinelErr9f3a8b');
+  });
+
+  it('keeps env-injected secrets out of configuration error descriptions', () => {
+    const sentinels = [
+      'FAKE_HOST_DO_NOT_LOG',
+      'FAKE_USER_DO_NOT_LOG',
+      'FAKE_PASS_DO_NOT_LOG_123',
+      'FAKE_FROM_DO_NOT_LOG',
+      'FAKE_TO_DO_NOT_LOG',
+      'FAKE_PORT_DO_NOT_LOG',
+      'FAKE_SECURE_DO_NOT_LOG',
+    ];
+    const describeConfigFailure = (
+      candidateEnv: Record<string, string | undefined>,
+    ): string => {
+      try {
+        getMailConfig(candidateEnv);
+      } catch (error) {
+        return describeMailError(error);
+      }
+      throw new Error('expected getMailConfig to throw');
+    };
+
+    const required = {
+      SMTP_HOST: 'mail.example.com',
+      SMTP_PORT: '587',
+      SMTP_USER: 'FAKE_USER_DO_NOT_LOG',
+      SMTP_PASS: 'FAKE_PASS_DO_NOT_LOG_123',
+      CONTACT_FROM_EMAIL: 'FAKE_FROM_DO_NOT_LOG@invalid.example',
+      CONTACT_TO_EMAIL: 'FAKE_TO_DO_NOT_LOG@invalid.example',
+    };
+    const descriptions = [
+      describeConfigFailure({
+        ...required,
+        SMTP_HOST: 'FAKE_HOST_DO_NOT_LOG example',
+      }),
+      describeConfigFailure({ ...required, SMTP_PORT: 'FAKE_PORT_DO_NOT_LOG' }),
+      describeConfigFailure({
+        ...required,
+        SMTP_SECURE: 'FAKE_SECURE_DO_NOT_LOG',
+      }),
+      describeConfigFailure({ ...required, SMTP_PASS: undefined }),
+    ];
+
+    for (const described of descriptions) {
+      expect(described.startsWith('MailConfigError:')).toBe(true);
+      for (const sentinel of sentinels) {
+        expect(described).not.toContain(sentinel);
+      }
+    }
+  });
+
   it('keeps allowlisted error codes but drops malformed ones', () => {
     const refused = Object.assign(new Error('connect failed'), {
       code: 'ECONNREFUSED',
@@ -294,6 +353,18 @@ describe('describeMailError — log sanitization', () => {
       code: 'FAKE_SECRET_HOSTNAME.invalid',
     });
     expect(describeMailError(poisoned)).toBe('Error');
+
+    const mixedCase = Object.assign(new Error('msg'), {
+      code: 'CodeSentinel9f3a',
+    });
+    const describedMixed = describeMailError(mixedCase);
+    expect(describedMixed).toBe('Error');
+    expect(describedMixed).not.toContain('CodeSentinel9f3a');
+
+    const oversized = Object.assign(new Error('msg'), {
+      code: 'A'.repeat(33),
+    });
+    expect(describeMailError(oversized)).toBe('Error');
   });
 
   it('handles non-Error and malformed thrown values safely', () => {

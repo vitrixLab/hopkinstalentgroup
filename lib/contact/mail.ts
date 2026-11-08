@@ -194,13 +194,27 @@ export function buildTransportOptions(config: MailConfig): SmtpTransportOptions 
  *
  * Exception messages and SMTP response bodies are NEVER copied into the
  * output: they can carry hostnames, connection details, credentials, or
- * user-submitted content. Only controlled categories are returned — the
- * allowlisted error class (sanitized), the numeric SMTP `responseCode`, and a
- * pattern-allowlisted `code` token (e.g. `ECONNREFUSED`) — plus the
- * `MailConfigError` message, which is authored in this module and contains
- * only setting names and validated port numbers.
+ * user-submitted content. Only controlled categories are returned — a name
+ * drawn from the fixed set of known error class names below (anything else,
+ * including untrusted or attacker-crafted names, falls back to `Error`), the
+ * finite numeric SMTP `responseCode`, and a pattern-allowlisted `code` token
+ * (e.g. `ECONNREFUSED`) — plus the `MailConfigError` message, which is
+ * authored in this module and contains only setting names and validated port
+ * numbers.
  */
-const SAFE_ERROR_NAME = /^[A-Za-z][A-Za-z0-9]{0,49}$/;
+const SAFE_ERROR_NAMES: ReadonlySet<string> = new Set([
+  'Error',
+  'AggregateError',
+  'EvalError',
+  'RangeError',
+  'ReferenceError',
+  'SyntaxError',
+  'TypeError',
+  'URIError',
+  'MailConfigError',
+  'SMTPError',
+]);
+const FALLBACK_ERROR_NAME = 'Error';
 const SAFE_ERROR_CODE = /^[A-Z0-9_]{1,32}$/;
 
 export function describeMailError(error: unknown): string {
@@ -216,9 +230,10 @@ export function describeMailError(error: unknown): string {
         responseCode?: unknown;
       };
       const name =
-        typeof candidate.name === 'string' && SAFE_ERROR_NAME.test(candidate.name)
+        typeof candidate.name === 'string' &&
+        SAFE_ERROR_NAMES.has(candidate.name)
           ? candidate.name
-          : 'Error';
+          : FALLBACK_ERROR_NAME;
       const parts = [name];
       if (
         typeof candidate.responseCode === 'number' &&
